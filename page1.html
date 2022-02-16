@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/add_image.css">
+    <link rel="stylesheet" href="./css/page1.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation_bar">
+        <div class="pint_mock_icon_container add_pin">
+            <img src="./images/add.png" alt="add_pin" class="pint_mock_icon">
+        </div>
+    </div>
+
+    <div class="pin_container"></div>
+
+    <div class="add_pin_modal">
+        <div class="add_pin_container">
+            <div class="side" id="left_side">
+                <div class="section1">
+
+                </div>
+
+                <div class="section2">
+                    <label for="upload_img" id="upload_img_label">
+                        <div class="upload_img_container">
+                            <div id="dotted_border">
+                                <div class="pint_mock_icon_container">
+                                    <img src="./images/up-arrow.png" alt="upload_img" class="pint_mock_icon">
+                                </div>
+                                <div>Clique para postar uma foto</div>
+                            </div>
+                        </div>
+                        <input type="file" name="upload_img" id="upload_img">
+                    </label>
+
+                    <div class="modals_pin">
+                        <div class="_image">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side" id="right_side">
+                <div class="section1">
+                    <div class="select_size">
+                        <select name="pin_siza" id="pin_size">
+                            <option value="" disabled selected>Selecionar</option>
+                            <option value="small">pequena</option>
+                            <option value="medium">media</option>
+                            <option value="large">grande</option>
+                        </select>
+                        <div class="save_pin">Salvar</div>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <input type="text" placeholder="Adicione um título a sua imagem!" class="new_pin_input" id="pin_title">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=""></script>
+
+    
+</body>
+</html>
