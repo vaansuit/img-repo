@@ -58,6 +58,8 @@ document.querySelector('.save_pin').addEventListener('click', () => {
         author: 'Jack',
         board: 'default',
         title: document.querySelector('#pin_title').value,
+        description: document.querySelector('#pin_description').value,
+        destination: document.querySelector('#pin_destination').value,
         img_blob: pin_image_blob,
         pin_size: document.querySelector('#pin_size').value
     }
@@ -81,7 +83,7 @@ function create_pin(pin_details) {
         new_pin.innerHTML = `<div class="pin_title">${pin_details.title}</div>
 <div class="pin_modal">
     <div class="modal_head">
-        <div class="save_card">Salvar</div>
+        <div class="save_card">Save</div>
     </div>
 
     <div class="modal_foot">
@@ -132,6 +134,8 @@ function reset_modal() {
 
     if (modals_pin.children[0].children[0]) modals_pin.children[0].removeChild(modals_pin.children[0].children[0]);
     document.querySelector('#pin_title').value = '';
+    document.querySelector('#pin_description').value = '';
+    document.querySelector('#pin_destination').value = '';
     document.querySelector('#pin_size').value = '';
     pin_image_blob = null;
 }

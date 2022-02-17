@@ -46,6 +46,8 @@ document.querySelector('.save_pin').addEventListener('click', () => {
         author: 'Jack',
         board: 'default',
         title: document.querySelector('#pin_title').value,
+        description: document.querySelector('#pin_description').value,
+        destination: document.querySelector('#pin_destination').value,
         img_blob: pin_image_blob,
         pin_size: document.querySelector('#pin_size').value
     }
